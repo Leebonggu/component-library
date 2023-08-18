@@ -2,10 +2,9 @@
 
 ## Schedule
 
-- Development end
-  - button
-- To be development
-  - etc...
+- [x] Button
+- [x] Field
+- [ ] ...
 
 ## Install
 
