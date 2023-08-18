@@ -1,16 +1,23 @@
 {
   "name": "@leebonggu/component-library",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "sideEffects": false,
   "type": "module",
   "types": "dist/types/index.d.ts",
+  "repository": "https://github.com/Leebonggu/component-library.git",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "keywords": [
     "ui",
     "component",
@@ -18,7 +25,7 @@
     "react-dom",
     "styled-components"
   ],
-  "author": "Leebonggu",
+  "author": "Leebonggu <dlqhdrn33@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "jest",
