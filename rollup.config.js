@@ -8,6 +8,7 @@ import del from 'rollup-plugin-delete';
 import pkg from './package.json' assert { type: 'json' };
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import dts from 'rollup-plugin-dts';
+import typescript from '@rollup/plugin-typescript';
 
 export default [
   {
@@ -25,6 +26,7 @@ export default [
         exclude: '**/node_modules/**',
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       }),
+      typescript({ tsconfig: './tsconfig.build.json' }),
     ],
     output: [
       {
@@ -42,6 +44,6 @@ export default [
   {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
+    plugins: [dts()],
   },
 ];
