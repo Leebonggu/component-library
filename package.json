@@ -27,6 +27,7 @@
     "@storybook/react": "^7.3.1",
     "@storybook/react-vite": "^7.3.1",
     "@storybook/testing-library": "^0.2.0",
+    "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
@@ -50,6 +51,8 @@
     "styled-components": "^6.0.7"
   },
   "dependencies": {
-    "polished": "^4.2.2"
+    "nanoid": "^4.0.2",
+    "polished": "^4.2.2",
+    "prop-types": "^15.8.1"
   }
 }

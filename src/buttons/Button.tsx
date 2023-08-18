@@ -1,9 +1,10 @@
 import { ComponentPropsWithoutRef, forwardRef } from 'react';
+import PropTypes from 'prop-types';
 import { StyledButton } from './Button.styles';
 
 export interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
   variant?: 'primary' | 'secondary' | 'danger';
-  size: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md' | 'lg';
   isFullWidth?: boolean;
   disabled?: boolean;
 }
@@ -35,5 +36,11 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
   },
 );
+
+Button.propTypes = {
+  variant: PropTypes.oneOf(['primary', 'secondary', 'danger']),
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  isFullWidth: PropTypes.bool,
+};
 
 Button.displayName = 'Button';
