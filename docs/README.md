@@ -31,21 +31,18 @@ main출력 파일 module경로 는 package.json.
 플러그인은 Rollup이 코드를 이해하고 올바르게 묶을 수 있도록 합니다.
 
 - del
-
   - 존재하는 기존 빌드 파일을 삭제합니다.
-
 - externals
-
   - 우리가 의존하는 종속성이 라이브러리 내에 번들되지 않도록 합니다.
   - 이를 통해 공통 종속성을 다른 패키지와 중복 제거하여 번들 크기를 줄일 수 있습니다.
-
 - nodeResolve
-
   - Rollup에서 타사 모듈을 찾을 수 있습니다.node_modules
-
 - commonjs
-
   - Rollup 내에서 CommonJS 모듈을 ESModules로 변환
-
 - babel
   - 이전에 정의한 Babel 구성을 사용하여 코드를 다양한 브라우저에서 사용할 수 있는 형식으로 변환합니다.
+
+## Refer
+
+- https://rollupjs.org/tutorial/
+- https://falsy.me/%eb%a6%ac%ec%95%a1%ed%8a%b8-%ec%bb%b4%ed%8f%ac%eb%84%8c%ed%8a%b8-%eb%9d%bc%ec%9d%b4%eb%b8%8c%eb%9f%ac%eb%a6%ac-%eb%a7%8c%eb%93%a4%ea%b8%b0-typescript-rollup-react/

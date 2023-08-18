@@ -11,4 +11,6 @@
 
 ```bash
 npm i @leebonggu/component-library
+
+pnpm add  @leebonggu/component-library
 ```
